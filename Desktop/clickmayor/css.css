@@ -1,0 +1,110 @@
+/* Estilo general para todo el body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Estilo del header */
+header {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    margin: 0;
+    flex-grow: 1;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: center; /* Centra el formulario de búsqueda en su espacio asignado */
+}
+
+.search-form input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 5px 10px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Estilo del footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: auto; /* Empuja el footer al final de la página */
+    width: 100%;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media queries para responsividad */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+
+    .search-form, nav {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+main {
+    text-align: center; /* Centra el texto dentro del elemento <main> */
+    padding: 20px;
+    margin: auto; /* Centra <main> horizontalmente si especificas un width */
+    max-width: 800px; /* Establece un ancho máximo para el contenido dentro de <main> */
+    flex: 1; /* Hace que <main> ocupe el espacio disponible */
+}
+
+.unstyled-link, .unstyled-link h2, .unstyled-link:visited, .unstyled-link:hover, .unstyled-link:active {
+    color: inherit; /* Usa el color del elemento padre */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-size: 25px; /* Mantiene el tamaño de fuente del h1 */
+    font-weight: inherit; /* Mantiene el grosor de fuente del h1 */
+}
